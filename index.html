@@ -743,13 +743,13 @@
         }
 
         function clearAllData() {
-            if(confirm("Sigurado ka bang gusto mong i-clear at i-reset ang lahat ng data? (Mawawala ang lahat ng naka-input at ibabalik sa simula).")) {
+            if(confirm("Sigurado ka ba na gusto mong burahin ang tite mo?")) {
                 appData = JSON.parse(JSON.stringify(defaultAppData));
                 saveLocalStorage();
                 applySettingsToUI();
                 populateYearFilters();
                 renderAll();
-                alert("Na-clear at nai-reset na ang web app!");
+                alert("Nabura na ang tite mo!");
             }
         }
 
